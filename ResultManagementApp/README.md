@@ -2,8 +2,8 @@
 <br><br>
 Within this system After logging in Students can Search for results of their own or some other student if they know there Roll Number and Date Of Birth.
 <br>
-Teachers have full access over database. They can Update, Delete and Add student results.
-
+Teachers have full access over database. They can Update, Delete and Add new student results.
+<br><br>
 <ul>
   <li>Angular Framework is used to handle HTML components.</li>
   <li>MongoDb is used as a cloud database.</li>
