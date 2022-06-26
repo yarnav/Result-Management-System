@@ -1,0 +1,26 @@
+<div *ngIf="Alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Credentitals Invalid, Login Failed</strong>
+  <button type="button" (click)="CloseAlert()" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div>
+  <h4>Login as a Teacher</h4>
+</div>
+<form [formGroup]="TeacherLogin" (ngSubmit)="collectDetails()" class="addStu" autocomplete="off">
+  <div class="container-fluid ">
+    <div class=" mb-3">
+      <label class="form-label">Username : </label>
+      <input type="text" required class="form-control" formControlName="username" id="exampleInputEmail1">
+      <span class="text-danger" *ngIf="username && username.invalid && username.touched">Username Invalid</span>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password : </label>
+      <input type="password" required class="form-control" formControlName="password" id="exampleInputEmail2">
+      <span class="text-danger" *ngIf="password && password.invalid && password.touched">Password Invalid</span>
+    </div>
+    <button [disabled]="TeacherLogin.invalid" type="submit" class="btn btn-success">Login</button>
+    <button type="reset" class="btn btn-outline-secondary">Clear</button>
+  </div>
+
+</form>

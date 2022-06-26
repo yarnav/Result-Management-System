@@ -1,0 +1,70 @@
+{
+  "students": [
+    {
+      "Roll": 1,
+      "Name": "Yatender",
+      "Dob": "2000-10-03",
+      "Score": 105,
+      "id": 1
+    },
+    {
+      "Roll": 2,
+      "Name": "Deepanshu",
+      "Dob": "2002-02-20",
+      "Score": 22,
+      "id": 2
+    },
+    {
+      "Roll": 3,
+      "Name": "Jitesh",
+      "Dob": "2000-03-03",
+      "Score": 35,
+      "id": 3
+    },
+    {
+      "Roll": 4,
+      "Name": "Ritika",
+      "Dob": "2004-04-04",
+      "Score": 45,
+      "id": 4
+    },
+    {
+      "Roll": 5,
+      "Name": "fifth",
+      "Dob": "2005-06-05",
+      "Score": 540,
+      "id": 5
+    },
+    {
+      "Roll": 8,
+      "Name": "Eigth",
+      "Dob": "2008-08-08",
+      "Score": 886,
+      "id": 7
+    },
+    {
+      "Roll": 9,
+      "Name": "Nineth",
+      "Dob": "2001-09-09",
+      "Score": 901,
+      "id": 8
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "username": "teacher1",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "username": "teacher2",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "username": "teacher3",
+      "password": "12345"
+    }
+  ]
+}

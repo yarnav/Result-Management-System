@@ -1,0 +1,26 @@
+<h4>Update Student-Result</h4>
+<form [formGroup]="EditStudent" (ngSubmit)="Update()" class="addStu" autocomplete="off">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Roll No. : </label>
+    <input type="number" name="Roll" required class="form-control" formControlName="Roll" id="exampleInputEmail1">
+    <span class="text-danger" *ngIf="Roll && Roll.invalid && Roll.touched">Roll Number Invalid</span>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Name : </label>
+    <input type="text" name="Name" required class="form-control" formControlName="Name" id="exampleInputEmail1">
+    <span class="text-danger" *ngIf="Name && Name.invalid && Name.touched">Name Invalid</span>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Date of Birth : </label>
+    <input type="date" name="Dob" required class="form-control" formControlName="Dob" id="exampleInputEmail1">
+    <span class="text-danger" *ngIf="Dob && Dob.invalid && Dob.touched">Date of Birth Invalid</span>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Score : </label>
+    <input type="number" name="Score" required class="form-control" formControlName="Score" id="exampleInputEmail1">
+    <span class="text-danger" *ngIf="Score && Score.invalid && Score.touched">Score Invalid</span>
+  </div>
+  <button type="submit" [disabled]="EditStudent.invalid" class="btn btn-success">Update</button>
+  <a href="list" class="btn btn-primary">View All</a>
+</form>

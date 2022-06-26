@@ -1,0 +1,23 @@
+<div *ngIf="Alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Credentitals Invalid, Login Failed</strong>
+  <button type="button" (click)="CloseAlert()" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div>
+  <h4>Login as a Student</h4>
+</div>
+<form [formGroup]="LoginStudent" (ngSubmit)="CollectDetails()" method="get" class="addStu" autocomplete="off">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Roll : </label>
+    <input type="number" required class="form-control" formControlName="Roll" id="exampleInputEmail1">
+    <span class="text-danger" *ngIf="Roll && Roll.invalid && Roll.touched">Roll Number Invalid</span>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Dob : </label>
+    <input type="date" required class="form-control" formControlName="Dob" id="exampleInputEmail1">
+    <span class="text-danger" *ngIf="Dob && Dob.invalid && Dob.touched">Date of Birth Invalid</span>
+  </div>
+  <button [disabled]="LoginStudent.invalid" type="submit" class="btn btn-success">Login</button>
+  <button type="reset" class="btn btn-outline-secondary">Clear</button>
+</form>
