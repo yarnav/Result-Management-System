@@ -1,3 +1,18 @@
+<h1>Result Management System</h1>
+<br><br>
+Within this system After logging in Students can Search for results of their own or some other student if they know there Roll Number and Date Of Birth.
+<br>
+Teachers have full access over database. They can Update, Delete and Add student results.
+
+<ul>
+  <li>Angular Framework is used to handle HTML components.</li>
+  <li>MongoDb is used as a cloud database.</li>
+  <li>Bootstrap and CSS are adopted for styling and formatting purpose.</li>
+  <li>Multiple Validations are applied on various forms given.</li> 
+</ul>
+
+<br><br><br><br><br><br><br><br>
+
 # ResultManagementApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
